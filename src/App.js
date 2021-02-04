@@ -2,6 +2,7 @@ import './App.css';
 import {useState} from 'react';
 import { Test } from './Test';
 import {ThemeProvider} from './themeProvider.js';
+import {StyledComponent} from './StyledComponent';
 
 const theme = {
   color:'blue',
@@ -18,6 +19,7 @@ function App() {
         </ThemeProvider>
         <button onClick={() => setDarkmode(!darkmode)}>Theme Change</button>
       </header>
+      <StyledComponent/>
     </div>
   );
 }
